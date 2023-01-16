@@ -1,0 +1,62 @@
+proxies:
+proxy-providers:
+  AKUN:
+    type: file
+    url: ""
+    path: "./assets/akun.yaml"
+    health-check:
+      enable: true
+      url: http://hi.bonds.id/ping
+      interval: 60
+proxy-groups:
+- name: MODE
+  type: select
+  disable-udp: false
+  proxies:
+    - DIRECT
+    - MANUAL
+    - LOAD-BALANCE
+    - BEST-PING
+- name: MANUAL
+  type: select
+  disable-udp: false
+  use:
+    - AKUN
+- name: WA
+  type: select
+  disable-udp: false
+  proxies:
+    - DIRECT
+    - MODE
+- name: LOAD-BALANCE
+  type: load-balance
+  disable-udp: false
+  strategy: consistent-hashing
+  url: http://hi.bonds.id/ping
+  interval: 300
+  use:
+    - AKUN
+- name: BEST-PING
+  type: url-test
+  disable-udp: false
+  url: http://hi.bonds.id/ping
+  interval: 300
+  use:
+    - AKUN
+rule-providers:
+  Whatsapp_classical:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/dicky040900/Config-Clash-For-Magisk-/main/Whatsapp_classical.yaml"
+    path: "./assets/rule/Whatsapp_classical.yaml"
+    interval: 86400
+  Whatsappkr328:
+    type: http
+    behavior: domain
+    url: "https://rules.kr328.app/whatsapp.yaml"
+    path: "./assets/rule/Whatsappkr328.yaml"
+    interval: 86400
+rules:
+- RULE-SET,Whatsapp_classical,WA
+- RULE-SET,Whatsappkr328,WA
+- MATCH,MODE
