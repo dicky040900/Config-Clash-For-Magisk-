@@ -1,0 +1,111 @@
+akrab:
+  - &akrab1 172.67.73.39 #qiscus.com
+  - &akrab2 108.136.37.102 #sdk.qiscus.com
+  - &akrab3 104.16.51.111 #support.zoom.us
+  - &akrab4 104.17.3.81 #api.midtrans.com
+  - &akrab5 cacerts.digicert.com
+  - &akrab6 188.114.97.12 #lms.uin-antasari.ac.id
+  - &akrab7 cdn.onlymega.com
+akrab_sni:
+  - &sni1 zoom.us
+  - &sni2 teams.microsoft.com
+flex:
+  - &flex1 sogood.linefriends.com
+  - &flex2 zendesk4.grabtaxi.com
+byu:
+  - &byu space.byu.id
+proxies:
+  - name: vvip-jagoanssh
+    server: *flex2
+    port: 443
+    type: vmess
+    uuid: acd17818-d434-49ae-80a6-d194bcaf6392
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgray.jagoan.vip
+    network: ws
+    ws-opts: 
+      path: /vvip
+      headers: 
+        Host: sgray.jagoan.vip
+    udp: true
+  - name: HE-1
+    server: *flex2
+    port: 443
+    type: trojan
+    password: b6bdf940-8128-11ed-bbe1-1239d0255272
+    skip-cert-verify: true
+    sni: sg1-trojan.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg1-trojan.bonds.id
+    udp: true
+  - name: HE-2
+    server: *flex2
+    port: 443
+    type: trojan
+    password: 252474e0-8128-11ed-bae8-1239d0255272
+    skip-cert-verify: true
+    sni: sg2-trojan.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg2-trojan.bonds.id
+    udp: true
+  - name: HE-3
+    server: *flex2
+    port: 443
+    type: trojan
+    password: 4fbd9fd0-8128-11ed-b9a2-1239d0255272
+    skip-cert-verify: true
+    sni: sg3-trojan.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg3-trojan.bonds.id
+    udp: true
+  - name: MUX
+    server: *flex2
+    port: 443
+    type: trojan
+    password: fdf747b0-8127-11ed-8d4a-1239d0255272
+    skip-cert-verify: true
+    sni: sg6-trojan.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg6-trojan.bonds.id
+    udp: true
+  - name: OVH
+    server: *flex2
+    port: 443
+    type: trojan
+    password: 71e23810-8128-11ed-8103-1239d0255272
+    skip-cert-verify: true
+    sni: sgovh-trojan.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sgovh-trojan.bonds.id
+    udp: true
+  - name: DUAL STACK
+    server: *flex2
+    port: 443
+    type: trojan
+    password: d455b920-8128-11ed-9332-1239d0255272
+    skip-cert-verify: true
+    sni: sg-atha.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg-atha.bonds.id
+    udp: true
