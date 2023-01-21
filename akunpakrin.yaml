@@ -1,0 +1,95 @@
+proxies:
+  - name: vvip-pakrin
+    server: sogood.linefriends.com
+    port: 443
+    type: vmess
+    uuid: acd17818-d434-49ae-80a6-d194bcaf6392
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sgray.jagoan.vip
+    network: ws
+    ws-opts: 
+      path: /vvip
+      headers: 
+        Host: sgray.jagoan.vip
+    udp: true
+  - name: HE1
+    server: sogood.linefriends.com
+    port: 443
+    type: trojan
+    password: c62d8210-99c7-11ed-8e9c-1239d0255272
+    skip-cert-verify: true
+    sni: sg1-trojan.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg1-trojan.bonds.id
+    udp: true
+  - name: HE1
+    server: sogood.linefriends.com
+    port: 443
+    type: trojan
+    password: 7b2724a0-99c7-11ed-b062-1239d0255272
+    skip-cert-verify: true
+    sni: sg2-trojan.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg2-trojan.bonds.id
+    udp: true
+  - name: HE3
+    server: sogood.linefriends.com
+    port: 443
+    type: trojan
+    password: 3d4cd200-99c7-11ed-a67e-1239d0255272
+    skip-cert-verify: true
+    sni: sg3-trojan.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg3-trojan.bonds.id
+    udp: true
+  - name: MUX
+    server: sogood.linefriends.com
+    port: 443
+    type: trojan
+    password: 9d4c08e0-99c7-11ed-a318-1239d0255272
+    skip-cert-verify: true
+    sni: sg6-trojan.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg6-trojan.bonds.id
+    udp: true
+  - name: OVH
+    server: sogood.linefriends.com
+    port: 443
+    type: trojan
+    password: f3b86710-99c7-11ed-9f86-1239d0255272
+    skip-cert-verify: true
+    sni: sgovh-trojan.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sgovh-trojan.bonds.id
+    udp: true
+  - name: DUAL
+    server: sogood.linefriends.com
+    port: 443
+    type: trojan
+    password: 1f10a700-99c8-11ed-875e-1239d0255272
+    skip-cert-verify: true
+    sni: sg-atha.bonds.id
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg-atha.bonds.id
+    udp: true
