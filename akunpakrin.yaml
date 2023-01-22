@@ -28,7 +28,7 @@ proxies:
       headers: 
         Host: sg1-trojan.bonds.id
     udp: true
-  - name: HE1
+  - name: HE2
     server: sogood.linefriends.com
     port: 443
     type: trojan
