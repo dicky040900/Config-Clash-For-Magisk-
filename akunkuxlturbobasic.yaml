@@ -31,11 +31,11 @@ proxies:
       headers: 
         Host: sgray.jagoan.vip
     udp: true
-  - name: HE-1
+  - name: HE1
     server: *flex2
     port: 443
     type: trojan
-    password: b6bdf940-8128-11ed-bbe1-1239d0255272
+    password: 2b1e06b0-9bfe-11ed-812d-1239d0255272
     skip-cert-verify: true
     sni: sg1-trojan.bonds.id
     network: ws
@@ -44,11 +44,11 @@ proxies:
       headers: 
         Host: sg1-trojan.bonds.id
     udp: true
-  - name: HE-2
+  - name: HE2
     server: *flex2
     port: 443
     type: trojan
-    password: 252474e0-8128-11ed-bae8-1239d0255272
+    password: ca8631a0-9bfd-11ed-b483-1239d0255272
     skip-cert-verify: true
     sni: sg2-trojan.bonds.id
     network: ws
@@ -57,11 +57,11 @@ proxies:
       headers: 
         Host: sg2-trojan.bonds.id
     udp: true
-  - name: HE-3
+  - name: HE3
     server: *flex2
     port: 443
     type: trojan
-    password: 4fbd9fd0-8128-11ed-b9a2-1239d0255272
+    password: ed2028e0-9bfd-11ed-9a60-1239d0255272
     skip-cert-verify: true
     sni: sg3-trojan.bonds.id
     network: ws
@@ -74,7 +74,7 @@ proxies:
     server: *flex2
     port: 443
     type: trojan
-    password: fdf747b0-8127-11ed-8d4a-1239d0255272
+    password: a621c660-9bfd-11ed-a6fd-1239d0255272
     skip-cert-verify: true
     sni: sg6-trojan.bonds.id
     network: ws
@@ -87,7 +87,7 @@ proxies:
     server: *flex2
     port: 443
     type: trojan
-    password: 71e23810-8128-11ed-8103-1239d0255272
+    password: 089ff1c0-9bfe-11ed-8389-1239d0255272
     skip-cert-verify: true
     sni: sgovh-trojan.bonds.id
     network: ws
@@ -96,11 +96,11 @@ proxies:
       headers: 
         Host: sgovh-trojan.bonds.id
     udp: true
-  - name: DUAL STACK
+  - name: DUAL
     server: *flex2
     port: 443
     type: trojan
-    password: d455b920-8128-11ed-9332-1239d0255272
+    password: 546c1f40-9bfe-11ed-8b69-1239d0255272
     skip-cert-verify: true
     sni: sg-atha.bonds.id
     network: ws
