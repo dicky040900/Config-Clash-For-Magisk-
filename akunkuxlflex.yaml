@@ -83,29 +83,29 @@ proxies:
       headers: 
         Host: sg6-trojan.bonds.id
     udp: true
+  - name: AMP
+    server: *flex1
+    port: 443
+    type: trojan
+    password: f13eaf30-a48a-11ed-9c36-1239d0255272
+    skip-cert-verify: true
+    sni: sg-2.test3.net
+    network: ws
+    ws-opts: 
+      path: /howdy
+      headers: 
+        Host: sg-2.test3.net
+    udp: true
   - name: OVH
     server: *flex1
     port: 443
     type: trojan
-    password: 089ff1c0-9bfe-11ed-8389-1239d0255272
+    password: 495440b0-a48b-11ed-8422-1239d0255272
     skip-cert-verify: true
-    sni: sgovh-trojan.bonds.id
+    sni: sg-3.test3.net
     network: ws
     ws-opts: 
       path: /howdy
       headers: 
-        Host: sgovh-trojan.bonds.id
-    udp: true
-  - name: DUAL
-    server: *flex1
-    port: 443
-    type: trojan
-    password: 546c1f40-9bfe-11ed-8b69-1239d0255272
-    skip-cert-verify: true
-    sni: sg-atha.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg-atha.bonds.id
+        Host: sg-3.test3.net
     udp: true
