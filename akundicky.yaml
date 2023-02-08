@@ -3,77 +3,77 @@ proxies:
     server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: e4fc1350-a474-11ed-b248-1239d0255272
+    password: c5e6a960-a7b1-11ed-9251-1239d0255272
     skip-cert-verify: true
     sni: sg1-trojan.bonds.id
     network: ws
-    ws-opts: 
+    ws-opts:
       path: /howdy
-      headers: 
+      headers:
         Host: sg1-trojan.bonds.id
     udp: true
   - name: HE2
     server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: 750773f0-a474-11ed-8d74-1239d0255272
+    password: 61c67a10-a7b1-11ed-8335-1239d0255272
     skip-cert-verify: true
     sni: sg2-trojan.bonds.id
     network: ws
-    ws-opts: 
+    ws-opts:
       path: /howdy
-      headers: 
+      headers:
         Host: sg2-trojan.bonds.id
     udp: true
   - name: HE3
     server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: 949acb70-a474-11ed-9bd6-1239d0255272
+    password: a3f07640-a7b1-11ed-a6db-1239d0255272
     skip-cert-verify: true
     sni: sg3-trojan.bonds.id
     network: ws
-    ws-opts: 
+    ws-opts:
       path: /howdy
-      headers: 
+      headers:
         Host: sg3-trojan.bonds.id
     udp: true
   - name: MUX
     server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: 51d759c0-a474-11ed-9289-1239d0255272
+    password: 20cfd4f0-a7b1-11ed-9e91-1239d0255272
     skip-cert-verify: true
     sni: sg6-trojan.bonds.id
     network: ws
-    ws-opts: 
+    ws-opts:
       path: /howdy
-      headers: 
+      headers:
         Host: sg6-trojan.bonds.id
     udp: true
   - name: OVH
     server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: bb78f010-a474-11ed-ab05-1239d0255272
+    password: e33924a0-a7b1-11ed-94fd-1239d0255272
     skip-cert-verify: true
     sni: sg-3.test3.net
     network: ws
-    ws-opts: 
+    ws-opts:
       path: /howdy
-      headers: 
+      headers:
         Host: sg-3.test3.net
     udp: true
   - name: AMP
     server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: 021104c0-a475-11ed-93d2-1239d0255272
+    password: 0bb7e580-a7b2-11ed-b6df-1239d0255272
     skip-cert-verify: true
     sni: sg-2.test3.net
     network: ws
-    ws-opts: 
+    ws-opts:
       path: /howdy
-      headers: 
+      headers:
         Host: sg-2.test3.net
     udp: true
