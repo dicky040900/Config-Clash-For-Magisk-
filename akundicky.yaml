@@ -16,7 +16,7 @@ proxies:
     server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: 61c67a10-a7b1-11ed-8335-1239d0255272
+    password: e2497c10-b9b6-11ed-8a10-1239d0255272
     skip-cert-verify: true
     sni: sg2-trojan.bonds.id
     network: ws
@@ -29,7 +29,7 @@ proxies:
     server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: a3f07640-a7b1-11ed-a6db-1239d0255272
+    password: 66e6c2e0-b9b7-11ed-8bad-1239d0255272
     skip-cert-verify: true
     sni: sg3-trojan.bonds.id
     network: ws
@@ -42,7 +42,7 @@ proxies:
     server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: 20cfd4f0-a7b1-11ed-9e91-1239d0255272
+    password: dd1d72c0-b9b7-11ed-8d50-1239d0255272
     skip-cert-verify: true
     sni: sg6-trojan.bonds.id
     network: ws
@@ -55,7 +55,7 @@ proxies:
     server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: e33924a0-a7b1-11ed-94fd-1239d0255272
+    password: a5c17200-bb7a-11ed-8a90-1239d0255272
     skip-cert-verify: true
     sni: sg-3.test3.net
     network: ws
@@ -68,7 +68,7 @@ proxies:
     server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: 0bb7e580-a7b2-11ed-b6df-1239d0255272
+    password: e28d79e0-bb7a-11ed-8efb-1239d0255272
     skip-cert-verify: true
     sni: sg-2.test3.net
     network: ws
