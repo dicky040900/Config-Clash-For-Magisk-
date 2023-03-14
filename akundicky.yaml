@@ -1,9 +1,22 @@
 proxies:
+  - name: HE1
+    server: sogood.linefriends.com
+    port: 443
+    type: trojan
+    password: 476548f0-c27d-11ed-b01f-1239d0255272
+    skip-cert-verify: true
+    sni: sg1-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg1-trojan.bonds.id
+    udp: true
   - name: HE2
     server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: e2497c10-b9b6-11ed-8a10-1239d0255272
+    password: 0002e800-c27d-11ed-a226-1239d0255272
     skip-cert-verify: true
     sni: sg2-trojan.bonds.id
     network: ws
@@ -16,7 +29,7 @@ proxies:
     server: sogood.linefriends.com
     port: 443
     type: trojan
-    password: 66e6c2e0-b9b7-11ed-8bad-1239d0255272
+    password: daa02a80-c27c-11ed-8c60-1239d0255272
     skip-cert-verify: true
     sni: sg3-trojan.bonds.id
     network: ws
