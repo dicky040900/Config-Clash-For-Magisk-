@@ -70,11 +70,11 @@ proxies:
       headers: 
         Host: sg3-trojan.bonds.id
     udp: true
-  - name: MUX
+  - name: mux
     server: *flex2
     port: 443
     type: trojan
-    password: f18f74f0-b9b7-11ed-b417-1239d0255272
+    password: 92257f70-c66e-11ed-bc0b-1239d0255272
     skip-cert-verify: true
     sni: sg6-trojan.bonds.id
     network: ws
