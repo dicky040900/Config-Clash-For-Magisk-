@@ -1,22 +1,6 @@
-akrab:
-  - &akrab1 172.67.73.39 #qiscus.com
-  - &akrab2 108.136.37.102 #sdk.qiscus.com
-  - &akrab3 104.16.51.111 #support.zoom.us
-  - &akrab4 104.17.3.81 #api.midtrans.com
-  - &akrab5 cacerts.digicert.com
-  - &akrab6 188.114.97.12 #lms.uin-antasari.ac.id
-  - &akrab7 cdn.onlymega.com
-akrab_sni:
-  - &sni1 zoom.us
-  - &sni2 teams.microsoft.com
-flex:
-  - &flex1 sogood.linefriends.com
-  - &flex2 zendesk4.grabtaxi.com
-byu:
-  - &byu space.byu.id
 proxies:
   - name: TerserahKolah
-    server: *flex1
+    server: sogood.linefriends.com
     port: 443
     type: vmess
     uuid: 4a879d2a-2517-4c2c-b0fa-da81a7ddb373
@@ -30,82 +14,4 @@ proxies:
       path: /vmess
       headers: 
         Host: qqwq.dxtxtr.me
-    udp: true
-  - name: HE1
-    server: *flex1
-    port: 443
-    type: trojan
-    password: 89e236a0-b9b6-11ed-b80a-1239d0255272
-    skip-cert-verify: true
-    sni: sg1-trojan.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg1-trojan.bonds.id
-    udp: true
-  - name: HE2
-    server: *flex1
-    port: 443
-    type: trojan
-    password: 1a92d510-b9b7-11ed-8ab6-1239d0255272
-    skip-cert-verify: true
-    sni: sg2-trojan.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg2-trojan.bonds.id
-    udp: true
-  - name: HE3
-    server: *flex1
-    port: 443
-    type: trojan
-    password: 7d0f9fd0-b9b7-11ed-a407-1239d0255272
-    skip-cert-verify: true
-    sni: sg3-trojan.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg3-trojan.bonds.id
-    udp: true
-  - name: mux
-    server: *flex1
-    port: 443
-    type: trojan
-    password: 92257f70-c66e-11ed-bc0b-1239d0255272
-    skip-cert-verify: true
-    sni: sg6-trojan.bonds.id
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg6-trojan.bonds.id
-    udp: true
-  - name: AMP
-    server: *flex1
-    port: 443
-    type: trojan
-    password: caa29a10-bb7a-11ed-a0ee-1239d0255272
-    skip-cert-verify: true
-    sni: sg-2.test3.net
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg-2.test3.net
-    udp: true
-  - name: OVH
-    server: *flex1
-    port: 443
-    type: trojan
-    password: 79eb7470-bb7a-11ed-ab87-1239d0255272
-    skip-cert-verify: true
-    sni: sg-3.test3.net
-    network: ws
-    ws-opts: 
-      path: /howdy
-      headers: 
-        Host: sg-3.test3.net
     udp: true
