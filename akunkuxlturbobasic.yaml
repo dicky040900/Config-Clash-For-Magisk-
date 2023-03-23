@@ -15,21 +15,21 @@ flex:
 byu:
   - &byu space.byu.id
 proxies:
-  - name: vvip-jagoanssh
+  - name: TerserahKolah
     server: *flex2
     port: 443
     type: vmess
-    uuid: acd17818-d434-49ae-80a6-d194bcaf6392
+    uuid: 4a879d2a-2517-4c2c-b0fa-da81a7ddb373
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sgray.jagoan.vip
+    servername: qqwq.dxtxtr.me
     network: ws
     ws-opts: 
-      path: /vvip
+      path: /vmess
       headers: 
-        Host: sgray.jagoan.vip
+        Host: qqwq.dxtxtr.me
     udp: true
   - name: HE1
     server: *flex2
